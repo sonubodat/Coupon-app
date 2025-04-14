@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Redeem Coupon</title>
+    <style>
+        body { font-family: sans-serif; text-align: center; margin-top: 50px; }
+        .coupon { padding: 20px; border: 2px dashed #444; display: inline-block; }
+        .btn { padding: 10px 20px; background: #28a745; color: white; border: none; cursor: pointer; }
+        .btn:disabled { background: gray; }
+        img { max-width: 200px; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    {% if not redeemed %}
+        <div class="coupon">
+            <h2>🎉 Valid Coupon!</h2>
+            <p>Email: {{ coupon.email }}</p>
+            <p>Code: {{ coupon.code }}</p>
+            <img src="/static/images/coupon.jpg" alt="Coupon Image">
