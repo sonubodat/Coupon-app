@@ -11,7 +11,7 @@ BASE_URL = "https://coupon-app-lhbd.vercel.app"
 app = Flask(__name__)
 
 app.config['SECRET_KEY'] = 'secret-key'  # Replace with a secure value
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///coupons.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:sqlForSonu@@db.ytosjbyuxzudqpyltfns.supabase.co:5432/postgres'
 app.config['UPLOAD_FOLDER'] = 'static/qr_codes'
 
 # Email configuration (use app password for Gmail)
