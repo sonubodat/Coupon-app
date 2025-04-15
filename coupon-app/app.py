@@ -6,7 +6,7 @@ from flask_sqlalchemy import SQLAlchemy
 from flask_mail import Mail, Message
 
 # Use your Vercel deployment base URL here
-BASE_URL = "https://coupon-app-lhbd.vercel.app/"  # Replace this
+BASE_URL = "https://coupon-app-lhbd.vercel.app"
 
 app = Flask(__name__)
 
