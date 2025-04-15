@@ -1,5 +1,5 @@
-Flask
-Flask-Mail
-Flask-SQLAlchemy
+Flask==3.0.0
+flask_sqlalchemy
+flask_mail
 qrcode
 pillow
